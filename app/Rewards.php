@@ -8,7 +8,7 @@ class Rewards extends Model
 {
     public static function getActiveRewards()
     {
-        return self::where('can_use',1)->get()->toArray();
+        return self::where('can_use',1)->get();
     }
 
 }

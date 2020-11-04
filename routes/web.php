@@ -8,6 +8,7 @@ Auth::routes();
 
 Route::group(['middleware'=>'user'],function (){
     Route::get('/user', 'HomeController@index')->name('user');
+    Route::post('/getGift', 'HomeController@getGift')->name('user');
 
 });
 Route::group(['middleware'=>'admin'],function (){

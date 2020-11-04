@@ -16,7 +16,9 @@
                     @if ($user->is_game_available == 1)
                             <div style="text-align: center">
                                 <a id="play" class="btn btn-success btn-lg">Play</a>
+                                <div id="response"></div>
                             </div>
+
                         @else
                             <div>You've already taken your chance</div>
                     @endif
